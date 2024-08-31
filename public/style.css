@@ -1,0 +1,96 @@
+/* Body styling to center content vertically and horizontally */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for the content */
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Button styling with hover effect */
+button {
+  padding: 12px 25px;
+  margin: 10px 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: calc(50% - 20px); /* Ensures two buttons are aligned properly */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Result area styling */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  word-wrap: break-word;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777777;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%; /* Full width for buttons on smaller screens */
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
